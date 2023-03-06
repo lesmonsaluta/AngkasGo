@@ -5,5 +5,9 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello!")
+	var x = [...]int{10, 20, 30}
+	fmt.Println(x[0])
+	var slice = []int{10, 25}
+	fmt.Println(slice)
+
 }
