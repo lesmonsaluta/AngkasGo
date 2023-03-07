@@ -5,16 +5,12 @@ import (
 )
 
 func main() {
-	var x []int
-	fmt.Println(x, len(x), cap(x))
-	x = append(x, 10)
-	fmt.Println(x, len(x), cap(x))
-	x = append(x, 20)
-	fmt.Println(x, len(x), cap(x))
-	x = append(x, 30)
-	fmt.Println(x, len(x), cap(x))
-	x = append(x, 40)
-	fmt.Println(x, len(x), cap(x))
-	x = append(x, 50)
-	fmt.Println(x, len(x), cap(x))
+	x := [4]int{5, 6, 7, 8}
+	y := x[:2]
+	z := x[2:]
+	x[0] = 10
+	fmt.Println("x:", x)
+	fmt.Println("y:", y)
+	fmt.Println("z:", z)
+
 }
