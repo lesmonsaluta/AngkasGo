@@ -5,9 +5,16 @@ import (
 )
 
 func main() {
-	var x = [...]int{10, 20, 30}
-	fmt.Println(x[0])
-	var slice = []int{10, 25}
-	fmt.Println(slice)
-
+	var x []int
+	fmt.Println(x, len(x), cap(x))
+	x = append(x, 10)
+	fmt.Println(x, len(x), cap(x))
+	x = append(x, 20)
+	fmt.Println(x, len(x), cap(x))
+	x = append(x, 30)
+	fmt.Println(x, len(x), cap(x))
+	x = append(x, 40)
+	fmt.Println(x, len(x), cap(x))
+	x = append(x, 50)
+	fmt.Println(x, len(x), cap(x))
 }

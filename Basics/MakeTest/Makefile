@@ -1,4 +1,7 @@
 .DEFAULT_GOAL := all
+
+
+	
 fmt:
 	go fmt ./...
 .PHONY:fmt
