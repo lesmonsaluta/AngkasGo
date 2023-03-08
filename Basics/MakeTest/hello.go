@@ -5,12 +5,13 @@ import (
 )
 
 func main() {
-	x := [4]int{5, 6, 7, 8}
-	y := x[:2]
-	z := x[2:]
-	x[0] = 10
-	fmt.Println("x:", x)
-	fmt.Println("y:", y)
-	fmt.Println("z:", z)
-
+	totalWins := map[string]int{}
+	totalWins["Orcas"] = 1
+	totalWins["Lions"] = 2
+	fmt.Println(totalWins["Orcas"])
+	fmt.Println(totalWins["Kittens"])
+	totalWins["Kittens"]++
+	fmt.Println(totalWins["Kittens"])
+	totalWins["Lions"] = 3
+	fmt.Println(totalWins)
 }
