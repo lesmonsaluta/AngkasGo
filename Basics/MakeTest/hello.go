@@ -5,14 +5,16 @@ import (
 )
 
 func main() {
-	m := map[string]int{
-		"hello": 5,
-		"world": 0,
+	intSet := map[int]bool{}
+	vals := []int{5, 10, 2, 5, 8, 7, 3, 9, 1, 2, 10}
+	for _, v := range vals {
+		intSet[v] = true
 	}
-	v, ok := m["hello"]
-	fmt.Println(v, ok)
-	v, ok = m["world"]
-	fmt.Println(v, ok)
-	v, ok = m["goodbye"]
-	fmt.Println(v, ok)
+	fmt.Println(len(vals), len(intSet))
+	fmt.Println(intSet[5])
+	fmt.Println(intSet[500])
+	if intSet[100] {
+		fmt.Println("100 is in the set")
+	}
+
 }
